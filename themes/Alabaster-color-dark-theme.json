@@ -1,0 +1,68 @@
+{
+  "name": "Alabaster Dark",
+  "type": "dark",
+  "colors": {
+    "editor.background": "#1f1f28",
+    "editor.foreground": "#e0e0d7",
+    "sideBar.background": "#1f1f28",
+    "sideBar.foreground": "#e0e0d7",
+    "statusBar.background": "#1f1f28",
+    "statusBar.foreground": "#e0e0d7"
+  },
+  "tokenColors": [
+    {
+      "name": "Strings",
+      "scope": [
+        "string"
+      ],
+      "settings": {
+        "foreground": "#87af5f"
+      }
+    },
+    {
+      "name": "Comments",
+      "scope": [
+        "comment"
+      ],
+      "settings": {
+        "foreground": "#d7af5f"
+      }
+    },
+    {
+      "name": "Constants and Numeric Literals",
+      "scope": [
+        "constant"
+      ],
+      "settings": {
+        "foreground": "#d787af"
+      }
+    }
+  ],
+  "semanticHighlighting": true,
+  "semanticTokenColors": {
+    "function.declaration": {
+      "foreground": "#6699CC"
+    },
+    "method.declaration": {
+      "foreground": "#6699CC"
+    },
+    "class.declaration": {
+      "foreground": "#6699CC"
+    },
+    "struct.declaration": {
+      "foreground": "#6699CC"
+    },
+    "interface.declaration": {
+      "foreground": "#6699CC"
+    },
+    "enum.declaration": {
+      "foreground": "#6699CC"
+    },
+    "type.declaration": {
+      "foreground": "#6699CC"
+    },
+    "namespace.declaration": {
+      "foreground": "#6699CC"
+    }
+  }
+}

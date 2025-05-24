@@ -1,0 +1,36 @@
+name: Build VS Code Theme
+
+# This action runs on every push to the main branch
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. Checks out your repository's code
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      # 2. Sets up Node.js, which is needed to run vsce
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20' # Use a current LTS version of Node.js
+
+      # 3. Installs the dependencies from package.json, including vsce
+      - name: Install Dependencies
+        run: npm install
+
+      # 4. Runs the vsce package command
+      - name: Package Theme
+        run: npx vsce package
+
+      # 5. Uploads the generated .vsix file as a build artifact
+      - name: Upload VSIX Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: vsix-package # Name of the artifact download
+          path: '*.vsix'     # Path to the file to upload

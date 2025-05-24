@@ -1,0 +1,31 @@
+{
+  "name": "alabaster",
+  "displayName": "alabaster",
+  "description": "My take on Alabaster theme",
+  "publisher": "arkrost",
+  "repository": "https://github.com/arkrost/alabaster.vsix",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.90.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Alabaster Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Alabaster-color-dark-theme.json"
+      },
+      {
+        "label": "Alabaster Light",
+        "uiTheme": "vs",
+        "path": "./themes/Alabaster-color-light-theme.json"
+      }
+    ]
+  },
+  "devDependencies": {
+    "@vscode/vsce": "^2.32.0"
+  }
+}

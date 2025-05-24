@@ -1,0 +1,68 @@
+{
+  "name": "Alabaster Light",
+  "type": "light",
+  "colors": {
+    "editor.background": "#ffffea",
+    "editor.foreground": "#000000",
+    "sideBar.background": "#ffffea",
+    "sideBar.foreground": "#000000",
+    "statusBar.background": "#ffffea",
+    "statusBar.foreground": "#000000"
+  },
+  "tokenColors": [
+    {
+      "name": "Strings",
+      "scope": [
+        "string"
+      ],
+      "settings": {
+        "foreground": "#006600"
+      }
+    },
+    {
+      "name": "Comments",
+      "scope": [
+        "comment"
+      ],
+      "settings": {
+        "foreground": "#aa0000"
+      }
+    },
+    {
+      "name": "Constants and Numeric Literals",
+      "scope": [
+        "constant"
+      ],
+      "settings": {
+        "foreground": "#8700af"
+      }
+    }
+  ],
+  "semanticHighlighting": true,
+  "semanticTokenColors": {
+    "function.declaration": {
+      "foreground": "#005fd7"
+    },
+    "method.declaration": {
+      "foreground": "#005fd7"
+    },
+    "class.declaration": {
+      "foreground": "#005fd7"
+    },
+    "struct.declaration": {
+      "foreground": "#005fd7"
+    },
+    "interface.declaration": {
+      "foreground": "#005fd7"
+    },
+    "enum.declaration": {
+      "foreground": "#005fd7"
+    },
+    "type.declaration": {
+      "foreground": "#005fd7"
+    },
+    "namespace.declaration": {
+      "foreground": "#005fd7"
+    }
+  }
+}
